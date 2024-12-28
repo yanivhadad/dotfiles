@@ -18,6 +18,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey '^I^I' autosuggest-accept
+bindkey jj vi-cmd-mode
 
 eval "$(pyenv init -)"
 eval "$(zoxide init zsh)"
