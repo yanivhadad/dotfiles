@@ -1,0 +1,7 @@
+
+alias bbh="brew update && brew bundle --file=~/.config/brew/BrewfileHome"
+
+sign-rr() {
+  codesign --force --deep -s - /Applications/Sonarr.app && xattr -rd com.apple.quarantine /Applications/Sonarr.app
+  codesign --force --deep -s - /Applications/Prowlarr.app && xattr -rd com.apple.quarantine /Applications/Prowlarr.app
+}

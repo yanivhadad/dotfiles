@@ -1,0 +1,33 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "jandedobbeleer/oh-my-posh"
+
+brew "atuin" # history manager
+brew "bash"
+brew "bat" # better cat
+brew "direnv" # env manager
+brew "eza" # better ls
+brew "fd" # better find
+brew "fzf" # cli fuzzy search
+brew "git"
+brew "jq" # cli json processor
+brew "neovim" # better vim
+brew "nushell" # data oriented shell
+brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
+brew "pstree" # show processes
+brew "pyenv"
+brew "ripgrep" # cli file search
+brew "stow"
+brew "tldr"
+brew "tmux"
+brew "tree" # tree like ls
+brew "watch"
+brew "yazi" # cli file mananger
+brew "zoxide" # better cd
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
+cask "font-meslo-lg-nerd-font"
+cask "font-symbols-only-nerd-font"
+cask "stats" # cpu stats in tray
+cask "ghostty" # terminal

@@ -1,0 +1,6 @@
+tap "homebrew/bundle"
+
+cask "prowlarr"
+cask "sonarr"
+cask "keepassxc"
+cask "soulseek"
