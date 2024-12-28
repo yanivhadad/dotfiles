@@ -2,3 +2,6 @@ theme = BirdsOfParadise
 background-opacity = 0.95
 macos-titlebar-style = tabs
 # window-decoration = false
+
+# keybindings
+keybind = global:cmd+ctrl+t=toggle_quick_terminal
