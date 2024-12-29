@@ -8,7 +8,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$P
 export ZSH="$HOME/.oh-my-zsh"
 
 # oh my zsh plugins (fast-syntax-highlighting has performance issues if sourcing multiple times)
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete direnv)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete direnv docker)
 source $ZSH/oh-my-zsh.sh
 
 export MANPATH="/usr/local/man:$MANPATH"
