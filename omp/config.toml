@@ -29,6 +29,14 @@ final_space = true
       style = 'full'
 
   [[blocks.segments]]
+    type = "node"
+    style = "plain"
+    powerline_symbol = ""
+    foreground = "lightGreen"
+    background = "transparent"
+    template = " [ {{ .Full }}]"
+
+  [[blocks.segments]]
     type = 'python'
     style = 'plain'
     background = 'transparent'
