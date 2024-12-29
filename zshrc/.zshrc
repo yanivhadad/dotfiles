@@ -24,6 +24,11 @@ eval "$(pyenv init -)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 
+# NVM configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # eza
 alias ls="eza --icons=always"
 alias l="eza -l --icons --git -a"
