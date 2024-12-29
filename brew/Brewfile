@@ -12,7 +12,6 @@ brew "fzf" # cli fuzzy search
 brew "git"
 brew "jq" # cli json processor
 brew "neovim" # better vim
-brew "nvm" # nodejs version manager
 brew "nushell" # data oriented shell
 brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
 brew "pstree" # show processes
