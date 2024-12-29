@@ -5,3 +5,5 @@ macos-titlebar-style = tabs
 
 # keybindings
 keybind = global:cmd+ctrl+t=toggle_quick_terminal
+
+cursor-style = block

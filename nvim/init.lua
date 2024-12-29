@@ -1,5 +1,12 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
-vim.g.mapleader = " "
+vim.g.mapleader = "  "
+
+vim.opt.guicursor = {
+  "n-v-c:block",      -- Normal, Visual, and Command modes: block cursor
+  -- "i:block50",          -- Insert mode: vertical bar cursor, 50% width
+  -- "r:hor20",          -- Replace mode: horizontal line cursor, 20% height
+  -- "o:hor50",          -- Operator-pending mode: horizontal line, 50% height
+}
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"

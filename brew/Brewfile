@@ -11,6 +11,7 @@ brew "fd" # better find
 brew "fzf" # cli fuzzy search
 brew "git"
 brew "jq" # cli json processor
+brew "lazygit" # cli git interface
 brew "neovim" # better vim
 brew "nushell" # data oriented shell
 brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations

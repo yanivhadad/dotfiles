@@ -3,7 +3,8 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit
 compinit
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # oh my zsh plugins (fast-syntax-highlighting has performance issues if sourcing multiple times)
@@ -23,6 +24,7 @@ bindkey jj vi-cmd-mode
 eval "$(pyenv init -)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+eval "$(tmuxifier init -)"
 
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"
