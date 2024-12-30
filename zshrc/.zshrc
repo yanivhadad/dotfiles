@@ -27,7 +27,8 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$P
 export ZSH="$HOME/.oh-my-zsh"
 
 # oh my zsh plugins (fast-syntax-highlighting has performance issues if sourcing multiple times)
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete direnv docker)
+# zsh-autocomplete
+plugins=(direnv)
 profile_command "before oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 profile_command "oh-my-zsh"
@@ -51,8 +52,6 @@ profile_command "fzf"
 bindkey '^I^I' autosuggest-accept
 bindkey jj vi-cmd-mode
 
-# eval "$(pyenv init -)"
-# profile_command "pyenv"
 eval "$(zoxide init zsh)"
 profile_command "zoxide"
 eval "$(atuin init zsh)"
@@ -60,18 +59,11 @@ profile_command "atuin"
 eval "$(tmuxifier init -)"
 profile_command "tmuxifier"
 
-# NVM configuration (seems like its not needed)
-# nvm() {
-#     if ! command -v nvm &> /dev/null; then
-#         # Initialize nvm if not already initialized
-#         export NVM_DIR="$HOME/.nvm"
-#         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#         [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-#     fi
-#     # Pass arguments to the actual nvm command
-#     command nvm "$@"
-# }
-# profile_command "nvm"
+# git
+alias gaa="git add -A"
+alias gc="git commit -m"
+alias gpl="git pull"
+alias gps="git push"
 
 # eza
 alias ls="eza --icons=always"
@@ -122,6 +114,9 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/omp/config.toml)"
