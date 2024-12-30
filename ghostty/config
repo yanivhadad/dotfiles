@@ -1,6 +1,7 @@
 theme = BirdsOfParadise
 background-opacity = 0.95
 macos-titlebar-style = tabs
+macos-option-as-alt = true
 # window-decoration = false
 
 # keybindings
