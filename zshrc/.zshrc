@@ -36,8 +36,16 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
 # FZF
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_OPTS="--height 50% --layout=default --border --color=hl:#2dd4bf"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
+
+# fzf preview for tmux
+export FZF_TMUX_OPTS=" -p90%,70% "  
 profile_command "fzf"
 
 bindkey '^I^I' autosuggest-accept
@@ -87,13 +95,17 @@ alias ovim="/usr/bin/vim"
 alias v=nvim
 alias vim=nvim
 
-time {
-alias cl='clear'
+# cat
 alias cat='bat --paging=never'
 alias catc='bat -pp'
+
+# misc
+alias cl='clear'
 alias "cht.sh"='~/.config/cht.sh/cht.sh'
 alias lg="lazygit"
-}
+alias fman="compgen -c | fzf | xargs man"
+alias nlof="~/.config/scripts/fzf_listoldfiles.sh"
+
 # network
 ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr, ":"); print $1, arr[2]}' | sort | uniq | sort -k2 -n }
 
