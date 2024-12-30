@@ -104,7 +104,7 @@ alias cl='clear'
 alias "cht.sh"='~/.config/cht.sh/cht.sh'
 alias lg="lazygit"
 alias fman="compgen -c | fzf | xargs man"
-alias nlof="~/.config/scripts/fzf_listoldfiles.sh"
+alias nlof="~/dotfiles/scripts/fzf_listoldfiles.sh"
 
 # network
 ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr, ":"); print $1, arr[2]}' | sort | uniq | sort -k2 -n }
