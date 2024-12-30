@@ -52,6 +52,10 @@ profile_command "fzf"
 bindkey '^I^I' autosuggest-accept
 bindkey jj vi-cmd-mode
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 eval "$(zoxide init zsh)"
 profile_command "zoxide"
 eval "$(atuin init zsh)"
