@@ -7,4 +7,7 @@ macos-option-as-alt = true
 # keybindings
 keybind = global:cmd+ctrl+t=toggle_quick_terminal
 
+shell-integration-features = no-cursor
+cursor-style-blink = false
 cursor-style = block
+adjust-cursor-thickness = 100%

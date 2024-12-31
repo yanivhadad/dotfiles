@@ -3,3 +3,5 @@
 --ignore=DS_Store
 --ignore=init.sh
 --ignore=scripts
+--ignore=completions
+--ignore=bin
