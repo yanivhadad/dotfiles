@@ -66,7 +66,7 @@ setopt hist_verify
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-eval "$(tmuxifier init -)"
+# eval "$(tmuxifier init -)"
 source $HOME/.config/zshrc/aliases.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
