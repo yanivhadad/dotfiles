@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "jandedobbeleer/oh-my-posh"
 
-# brew "atuin" # history manager
 brew "bash"
 brew "bat" # better cat
 brew "direnv" # env manager
@@ -25,9 +24,6 @@ brew "uv" # python package and project manager
 brew "watch"
 brew "yazi" # cli file mananger
 brew "zoxide" # better cd
-# brew "zsh-autocomplete"
-# brew "zsh-autosuggestions"
-# brew "zsh-syntax-highlighting"
 
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
