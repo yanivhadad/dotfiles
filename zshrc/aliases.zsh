@@ -42,5 +42,5 @@ ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr,
 
 # machine maintenance
 alias uz="source $HOME/.zshrc"
-alias um="brew update && brew upgrade && omz update"
+alias um="brew update && brew upgrade"
 alias bb="brew update && brew bundle --file=~/.config/brew/Brewfile"

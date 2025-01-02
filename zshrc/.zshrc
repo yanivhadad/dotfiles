@@ -1,4 +1,6 @@
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH"
 export LANG=en_US.UTF-8
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
