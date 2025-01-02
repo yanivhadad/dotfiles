@@ -4,6 +4,8 @@ macos-titlebar-style = tabs
 macos-option-as-alt = true
 # window-decoration = false
 window-save-state = always
+confirm-close-surface = false
+background-blur-radius = 5
 
 # keybindings
 keybind = global:cmd+ctrl+t=toggle_quick_terminal
