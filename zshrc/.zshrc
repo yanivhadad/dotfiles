@@ -2,6 +2,7 @@
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH"
 export LANG=en_US.UTF-8
+export XDG_CONFIG_HOME="$HOME/.config"
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -14,6 +15,8 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
 
 zinit snippet OMZ::lib/clipboard.zsh
 zinit snippet OMZP::git
