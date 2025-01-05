@@ -1,4 +1,4 @@
-theme = BirdsOfParadise
+theme = catppuccin-mocha
 background-opacity = 0.95
 macos-titlebar-style = tabs
 macos-option-as-alt = true

@@ -39,6 +39,8 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 
+vim.cmd.colorscheme "catppuccin-mocha"
+
 vim.schedule(function()
   require "mappings"
 end)
