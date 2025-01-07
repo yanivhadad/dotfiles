@@ -15,6 +15,7 @@ brew "nushell" # data oriented shell
 brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
 brew "pstree" # show processes
 brew "pyenv"
+brew "pwgen" # cli password generator
 brew "ripgrep" # cli file search
 brew "stow"
 brew "tldr"
