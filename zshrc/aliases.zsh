@@ -44,3 +44,10 @@ ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr,
 alias uz="source $HOME/.zshrc"
 alias um="brew update && brew upgrade"
 alias bb="brew update && brew bundle --file=~/.config/brew/Brewfile"
+
+# python
+load-pyenv() {
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init - zsh)"
+}
