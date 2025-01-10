@@ -15,8 +15,6 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab
-zinit ice depth=1
-zinit light jeffreytse/zsh-vi-mode
 
 zinit snippet OMZ::lib/clipboard.zsh
 zinit snippet OMZP::git
@@ -51,10 +49,6 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
 export FZF_TMUX_OPTS=" -p90%,70% "  # fzf preview for tmux
 
-bindkey '^E' fzf-cd-widget
-bindkey '^I^I' autosuggest-accept
-bindkey jj vi-cmd-mode
-
 HISTFILE=$HOME/.zhistory
 HISTSIZE=5000
 SAVEHIST=$HISTSIZE
@@ -71,8 +65,9 @@ setopt hist_verify
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-# eval "$(tmuxifier init -)"
+
 source $HOME/.config/zshrc/aliases.zsh
+source $HOME/.config/zshrc/keybindings.zsh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/omp/config.toml)"

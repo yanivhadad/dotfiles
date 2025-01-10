@@ -34,6 +34,7 @@ alias catc='bat -pp'
 alias cl='clear'
 alias cht='~/.config/cht.sh/cht.sh'
 alias lg="lazygit"
+alias ldock="lazydocker"
 alias fman="compgen -c | fzf | xargs man"
 alias nlof="~/dotfiles/scripts/fzf_listoldfiles.sh"
 

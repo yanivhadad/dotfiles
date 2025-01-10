@@ -2,13 +2,14 @@ tap "homebrew/bundle"
 tap "jandedobbeleer/oh-my-posh"
 
 brew "bash"
-brew "bat" # better cat
+brew "bat" # A cat clone with syntax highlighting and Git integration.
 brew "direnv" # env manager
 brew "eza" # better ls
 brew "fd" # better find
 brew "fzf" # cli fuzzy search
 brew "git"
 brew "jq" # cli json processor
+brew "lazydocker" # cli docker interface
 brew "lazygit" # cli git interface
 brew "neovim" # better vim
 brew "nushell" # data oriented shell
