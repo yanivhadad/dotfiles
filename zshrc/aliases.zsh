@@ -43,7 +43,7 @@ ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr,
 
 # machine maintenance
 alias uz="source $HOME/.zshrc"
-alias um="brew update && brew upgrade"
+alias um="brew update && brew upgrade && bat cache --build"
 alias bb="brew update && brew bundle --file=~/.config/brew/Brewfile"
 
 # python
