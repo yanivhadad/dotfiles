@@ -26,6 +26,7 @@ brew "uv" # python package and project manager
 brew "watch"
 brew "yazi" # cli file mananger
 brew "zoxide" # better cd
+brew "zig" # zig programming language
 
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
