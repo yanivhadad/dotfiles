@@ -17,6 +17,7 @@ brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
 brew "pstree" # show processes
 brew "pyenv"
 brew "pwgen" # cli password generator
+brew "r" # r programming language
 brew "ripgrep" # cli text file search [rg]
 brew "stow"
 brew "tldr"
@@ -32,3 +33,4 @@ cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "stats" # cpu stats in tray
 cask "ghostty" # terminal
+cask "rstudio" # r studio
