@@ -8,6 +8,7 @@ brew "eza" # better ls
 brew "fd" # better find
 brew "fzf" # cli fuzzy search
 brew "git"
+brew "httpie" # cli http client replacement for curl
 brew "jq" # cli json processor
 brew "lazydocker" # cli docker interface
 brew "lazygit" # cli git interface
