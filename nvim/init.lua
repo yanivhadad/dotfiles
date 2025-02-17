@@ -1,5 +1,6 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = "  "
+vim.wo.relativenumber = true
 
 vim.opt.guicursor = {
   "n-v-c:block",      -- Normal, Visual, and Command modes: block cursor
