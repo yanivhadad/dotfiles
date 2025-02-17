@@ -1,5 +1,14 @@
 
-alias bbh="brew update && brew bundle --file=~/.config/brew/BrewfileHome"
+# alias bbh="brew update && brew bundle --file=~/.config/brew/BrewfileHome"
+
+bbh() {
+  brew update
+  brew install --cask prowlarr
+  brew install --cask sonarr
+  brew install --cask keepassxc
+  brew install --cask soulseek
+}
+
 
 sign-rr() {
   codesign --force --deep -s - /Applications/Sonarr.app && xattr -rd com.apple.quarantine /Applications/Sonarr.app

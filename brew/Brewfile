@@ -3,6 +3,7 @@ tap "jandedobbeleer/oh-my-posh"
 
 brew "bash"
 brew "bat" # A cat clone with syntax highlighting and Git integration.
+brew "btop" # better top
 brew "direnv" # env manager
 brew "eza" # better ls
 brew "fd" # better find
