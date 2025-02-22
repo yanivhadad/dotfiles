@@ -44,6 +44,11 @@ ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr,
 # machine maintenance
 alias uz="source $HOME/.zshrc"
 
+# python
+alias python="uvx -p 3.13 python"
+alias py="uvx -p 3.13 python"
+alias ur="uv run"
+
 um() {
   brew update && brew upgrade && bat cache --build
   uv tool upgrade --python 3.12 posting
