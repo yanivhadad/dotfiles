@@ -33,15 +33,23 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
--- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
 
-vim.cmd.colorscheme "catppuccin-mocha"
 
-vim.schedule(function()
+if vim.g.vscode then
   require "mappings"
-end)
+  vim.opt.statusline = "%{mode()}"
+else
+  vim.cmd.colorscheme "catppuccin-mocha"
+
+
+  vim.schedule(function()
+    require "mappings"
+  end)
+end
+
+

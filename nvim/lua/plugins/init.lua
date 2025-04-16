@@ -8,11 +8,17 @@ return {
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
+    cond = not vim.g.vscode,
     config = function()
       require "configs.lspconfig"
     end,
   },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { 
+    "catppuccin/nvim", 
+    name = "catppuccin", 
+    priority = 1000,
+    cond = not vim.g.vscode,
+  },
   {
     "folke/flash.nvim",
     event = "VeryLazy",
@@ -29,6 +35,7 @@ return {
   },
   {
     "folke/snacks.nvim",
+    cond = not vim.g.vscode,
     priority = 1000,
     lazy = false,
     ---@type snacks.Config
@@ -119,6 +126,7 @@ return {
   },
   {
     "christoomey/vim-tmux-navigator",
+    cond = not vim.g.vscode,
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
