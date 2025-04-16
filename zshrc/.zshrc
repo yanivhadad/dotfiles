@@ -1,6 +1,6 @@
 
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH"
+export PATH="$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH:$HOME/Library/pnpm"
 export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -54,6 +54,8 @@ HISTSIZE=5000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
+setopt EXTENDED_HISTORY
+setopt inc_append_history_time
 setopt share_history
 setopt hist_ignore_space
 setopt hist_ignore_all_dups

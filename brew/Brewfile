@@ -9,20 +9,20 @@ brew "eza" # better ls
 brew "fd" # better find
 brew "fzf" # cli fuzzy search
 brew "git"
+brew "glow" # markdown reader
 brew "httpie" # cli http client replacement for curl
 brew "jq" # cli json processor
 brew "lazydocker" # cli docker interface
 brew "lazygit" # cli git interface
 brew "neovim" # better vim
 brew "nushell" # data oriented shell
-brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
+# brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
 brew "pstree" # show processes
 brew "pyenv"
 brew "pwgen" # cli password generator
-brew "r" # r programming language
 brew "ripgrep" # cli text file search [rg]
 brew "stow"
-brew "tldr"
+brew "tlrc"
 brew "tmux"
 brew "tree" # tree like ls
 brew "uv" # python package and project manager
@@ -35,4 +35,3 @@ cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "stats" # cpu stats in tray
 cask "ghostty" # terminal
-cask "rstudio" # r studio
