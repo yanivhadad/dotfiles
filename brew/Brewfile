@@ -1,5 +1,5 @@
 tap "homebrew/bundle"
-tap "jandedobbeleer/oh-my-posh"
+# Tap "jandedobbeleer/oh-my-posh"
 
 brew "bash"
 brew "bat" # A cat clone with syntax highlighting and Git integration.
