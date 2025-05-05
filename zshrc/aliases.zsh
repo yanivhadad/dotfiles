@@ -3,6 +3,7 @@ alias gaa="git add -A"
 alias gc="git commit -m"
 alias gpl="git pull"
 alias gps="git push"
+alias gconflicts="git diff --name-only --diff-filter=U"
 
 # eza
 alias ls="eza --icons=always"
