@@ -5,21 +5,28 @@ brew "bash"
 brew "bat" # A cat clone with syntax highlighting and Git integration.
 brew "btop" # better top
 brew "direnv" # env manager
+brew "dua-cli" # disk usage analyzer
+brew "dust" # disk usage analyzer
 brew "eza" # better ls
 brew "fd" # better find
+brew "fselect" # fuzzy file selector using sql
 brew "fzf" # cli fuzzy search
 brew "git"
+brew "git-delta" # better git diff
 brew "glow" # markdown reader
 brew "httpie" # cli http client replacement for curl
+brew "hyperfine" # cli benchmark tool
 brew "jq" # cli json processor
 brew "lazydocker" # cli docker interface
 brew "lazygit" # cli git interface
+brew "mprocs" # parallel process manager
 brew "neovim" # better vim
 brew "nushell" # data oriented shell
 # brew "jandedobbeleer/oh-my-posh/oh-my-posh" # prompt customizations
 brew "pstree" # show processes
 brew "pyenv"
 brew "pwgen" # cli password generator
+brew "rga" # ripgrep-all, search all files
 brew "ripgrep" # cli text file search [rg]
 brew "stow"
 brew "tlrc"
@@ -28,6 +35,7 @@ brew "tree" # tree like ls
 brew "uv" # python package and project manager
 brew "watch"
 brew "yazi" # cli file mananger
+brew "zellij" # terminal multiplexer
 brew "zoxide" # better cd
 brew "zig" # zig programming language
 

@@ -46,7 +46,7 @@ ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr,
 alias uz="source $HOME/.zshrc"
 
 # python
-alias python="uvx -p 3.13 python"
+#alias python="uvx -p 3.13 python"
 alias py="uvx -p 3.13 python"
 alias ur="uv run"
 

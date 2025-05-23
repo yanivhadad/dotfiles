@@ -16,3 +16,8 @@ git config --global push.followTags true
 git config --global help.autocorrect prompt
 
 git config --global commit.verbose true
+
+git config --global core.pager delta
+git config --global interactive.diffFilter 'delta --color-only'
+git config --global delta.navigate true
+git config --global merge.conflictStyle zdiff3
