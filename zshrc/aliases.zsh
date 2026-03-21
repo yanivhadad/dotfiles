@@ -57,7 +57,7 @@ um() {
 }
 
 bb() {
-  brew update && brew bundle --file=~/.config/brew/Brewfile
+  brew update && brew upgrade && brew bundle --file=~/.config/brew/Brewfile
   uv tool install --python 3.12 posting
 }
 

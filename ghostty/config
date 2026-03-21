@@ -1,3 +1,4 @@
+auto-update-channel = stable
 theme = Catppuccin Mocha
 background-opacity = 0.95
 macos-titlebar-style = tabs
