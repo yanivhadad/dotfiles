@@ -8,6 +8,7 @@ alias gconflicts="git diff --name-only --diff-filter=U"
 # eza
 alias ls="eza --icons=always"
 alias l="eza -l --icons --git -a"
+alias ll="eza -1a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
