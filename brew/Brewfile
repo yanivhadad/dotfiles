@@ -30,6 +30,7 @@ brew "rga" # ripgrep-all, search all files
 brew "ripgrep" # cli text file search [rg]
 brew "stow"
 brew "tlrc"
+brew "television" # fzf alternative
 brew "tmux"
 brew "tree" # tree like ls
 brew "uv" # python package and project manager

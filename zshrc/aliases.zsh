@@ -9,6 +9,7 @@ alias gitpushwatch="git push && sleep 5s && glab ci status --live"
 # eza
 alias ls="eza --icons=always"
 alias l="eza -l --icons --git -a"
+alias ll="eza -1a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
@@ -58,7 +59,7 @@ um() {
 }
 
 bb() {
-  brew update && brew bundle --file=~/.config/brew/Brewfile
+  brew update && brew upgrade && brew bundle --file=~/.config/brew/Brewfile
   uv tool install --python 3.12 posting
 }
 
