@@ -74,3 +74,5 @@ source $HOME/.config/zshrc/keybindings.zsh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/omp/config.toml)"
 fi
+
+export PATH=/Users/yaniv.hadad/.local/bin:$PATH

@@ -4,6 +4,7 @@ alias gc="git commit -m"
 alias gpl="git pull"
 alias gps="git push"
 alias gconflicts="git diff --name-only --diff-filter=U"
+alias gitpushwatch="git push && sleep 5s && glab ci status --live"
 
 # eza
 alias ls="eza --icons=always"
