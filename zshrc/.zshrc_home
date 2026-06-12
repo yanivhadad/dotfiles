@@ -1,15 +1,16 @@
 bbh() {
+  echo "updating home related software..."
   brew update
-  brew install --cask prowlarr
-  brew install --cask sonarr
-  brew install --cask lidarr
+  # brew install --cask prowlarr
+  # brew install --cask sonarr
+  # brew install --cask lidarr
   brew install --cask keepassxc
   brew install --cask soulseek
 }
 
 
 sign-rr() {
-  codesign --force --deep -s - /Applications/Sonarr.app && xattr -rd com.apple.quarantine /Applications/Sonarr.app
-  codesign --force --deep -s - /Applications/Prowlarr.app && xattr -rd com.apple.quarantine /Applications/Prowlarr.app
-  codesign --force --deep -s - /Applications/Lidarr.app && xattr -rd com.apple.quarantine /Applications/Lidarr.app
+  # codesign --force --deep -s - /Applications/Sonarr.app && xattr -rd com.apple.quarantine /Applications/Sonarr.app
+  # codesign --force --deep -s - /Applications/Prowlarr.app && xattr -rd com.apple.quarantine /Applications/Prowlarr.app
+  # codesign --force --deep -s - /Applications/Lidarr.app && xattr -rd com.apple.quarantine /Applications/Lidarr.app
 }
