@@ -76,3 +76,6 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 export PATH=/Users/yaniv.hadad/.local/bin:$PATH
+
+# opencode
+export PATH=/Users/yanivhadad/.opencode/bin:$PATH
