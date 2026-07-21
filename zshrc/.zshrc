@@ -78,3 +78,5 @@ fi
 export PATH=/Users/yaniv.hadad/.local/bin:$PATH
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+# opencode
+export PATH=/Users/yanivhadad/.opencode/bin:$PATH

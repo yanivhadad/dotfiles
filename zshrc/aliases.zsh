@@ -53,14 +53,9 @@ alias py="uvx -p 3.13 python"
 alias ur="uv run"
 
 um() {
-  brew update && brew upgrade && bat cache --build
-  uv tool upgrade --python 3.12 posting
-  uv tool update-shell
-}
-
-bb() {
-  brew update && brew upgrade && brew bundle --file=~/.config/brew/Brewfile
-  uv tool install --python 3.12 posting
+  echo "updating machine..."
+  brew update && brew upgrade -y && brew bundle --file=~/.config/brew/Brewfile && bat cache --build
+  uv tool upgrade --python 3.12 posting && uv tool update-shell
 }
 
 # python
