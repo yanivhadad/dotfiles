@@ -18,7 +18,14 @@ fzf-code-widget() {
 }
 zle -N fzf-code-widget
 
+open-tv-lr() {
+  tv lr       # Replace 'git-repos' with your target channel (e.g., files, env, text)
+  zle redisplay
+}
+zle -N open-tv-lr
+
 bindkey '^E' fzf-cd-widget
-bindkey '^O' fzf-code-widget
+# bindkey '^O' fzf-code-widget
+bindkey '^O' open-tv-lr
 bindkey '^I^I' autosuggest-accept
 bindkey jj vi-cmd-mode

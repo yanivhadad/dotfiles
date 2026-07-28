@@ -1,0 +1,16 @@
+[metadata]
+name = "lr"
+description = "Browse and preview local git repositories"
+requirements = ["fd"]
+
+[source]
+# command = "fd -I -H -t d '^\\.git$' ~/git -x dirname"
+command = "fd -I -H '^\\.git$|\\.code-workspace$' ~/git -x sh -c 'case \"$1\" in */.git) dirname \"$1\" ;; */.code-workspace) dirname \"$1\" ;; *) echo \"$1\" ;; esac' _"
+
+[keybindings]
+enter = "actions:open"
+
+[actions.open]
+description = "Open repository in cursor"
+command = "code {}"
+mode = "execute"
