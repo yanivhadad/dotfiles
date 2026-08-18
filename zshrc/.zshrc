@@ -67,6 +67,7 @@ setopt hist_verify
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+eval "$(tv init zsh)"
 
 source $HOME/.config/zshrc/aliases.zsh
 source $HOME/.config/zshrc/keybindings.zsh

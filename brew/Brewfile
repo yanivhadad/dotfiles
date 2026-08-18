@@ -39,6 +39,8 @@ brew "zellij" # terminal multiplexer
 brew "zoxide" # better cd
 brew "zig" # zig programming language
 brew "television"
+brew "herdr"
+
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "ghostty" # terminal
