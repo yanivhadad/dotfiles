@@ -40,6 +40,7 @@ alias lg="lazygit"
 alias ldock="lazydocker"
 alias fman="compgen -c | fzf | xargs man"
 alias nlof="~/dotfiles/scripts/fzf_listoldfiles.sh"
+alias cs="code-server --disable-telemetry --bind-addr 127.0.0.1:9001"
 
 # network
 ports-ls() { sudo lsof -i -P -n | grep LISTEN | grep "*:" | awk '{split($9, arr, ":"); print $1, arr[2]}' | sort | uniq | sort -k2 -n }
@@ -51,6 +52,7 @@ alias uz="source $HOME/.zshrc"
 #alias python="uvx -p 3.13 python"
 alias py="uvx -p 3.13 python"
 alias ur="uv run"
+
 
 um() {
   echo "updating machine..."
