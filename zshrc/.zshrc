@@ -68,6 +68,7 @@ setopt hist_verify
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(tv init zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source $HOME/.config/zshrc/aliases.zsh
 source $HOME/.config/zshrc/keybindings.zsh
