@@ -1,6 +1,6 @@
 
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH:$HOME/Library/pnpm"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$VOLTA_HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.config/tmux/plugins/tmuxifier/bin:$HOME/dotfiles/bin:$PATH:$HOME/Library/pnpm"
 export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
 
