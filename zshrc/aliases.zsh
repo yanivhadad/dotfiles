@@ -5,8 +5,10 @@ alias gpl="git pull"
 alias gps="git push"
 alias gconflicts="git diff --name-only --diff-filter=U"
 alias gitpushwatch="git push && sleep 5s && glab ci status --live"
-alias gitpull="git pull"
-alias gitpush="git push"
+alias gitpull="gpl"
+alias gitpul="gpl"
+alias gitpush="gps"
+alias gitpus="gps"
 
 # eza
 alias ls="eza --icons=always"
